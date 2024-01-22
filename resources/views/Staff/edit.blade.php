@@ -28,8 +28,8 @@
                 <input type="text" name="title" class="form-control" value="{{ $staff->title }}" required>
             </div>
             <div class="col-md-12">
-                <strong>salary: <span class="text-danger">*</span> </strong>
-                <input type="number" name="salary" class="form-control" value="{{ $staff->salary }}" required>
+                <strong>Salary: <span class="text-danger">*</span> </strong>
+                <input type="number" name="salary" class="form-control" value="{{ $staff->staff }}" required>
             </div>
             <div class="col-md-12">
                 <strong>Photo: </strong>
@@ -37,12 +37,12 @@
                 <img src="{{ $staff->photo }}" height="150" />
             </div>
             <div class="col-md-12">
-                <strong>birthate:</strong>
-                <textarea class="form-control" style="height:150px" name="birthate" > {{ $staff->birthate }}</textarea>
+                <strong>Birthdate:</strong>
+                <textarea class="form-control" style="height:150px" name="birthdate" > {{ $staff->birthdate }}</textarea>
             </div>
             <div class="col-md-12">
-                <strong>phone: </strong>
-                <input type="number" name="phone" class="form-control" value="{{ $staff->phone }}">
+                <strong>Phone: </strong>
+                <input type="number" name="stock" class="form-control" value="{{ $staff->Phone }}">
             </div>
             <div class="col-md-12">
                 <button type="submit" class="btn btn-primary">Submit</button>

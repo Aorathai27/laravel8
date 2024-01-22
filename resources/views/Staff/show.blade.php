@@ -12,16 +12,16 @@
         <div class="col-lg-8">
 
             <h2>{{ $staff->title }}</h2>
-            <div>{{ $staff->content }} </div>
+            <div>{{ $staff->birthdate }} </div>
             <hr />
             <div>
-                <strong>Price: </strong>
-                <span class="fs-2 text-warning">฿{{ $staff->price }}</span>
+                <strong>Salary: </strong>
+                <span class="fs-2 text-warning">฿{{ $staff->salary }}</span>
             </div>
             <hr />
             <div>
-                <strong>Stock: </strong>
-                <span>{{ $staff->stock }}</span>
+                <strong>Phone: </strong>
+                <span>{{ $staff->phone }}</span>
             </div>
         </div>
     </div>

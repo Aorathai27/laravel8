@@ -1,7 +1,7 @@
 <x-bootstrap title="Staff">
     <div class="row g-4">
         <div class="col-lg-8">
-            <a class="btn btn-success" href="{{ route('staff.create') }}"> Create New Staff</a>
+            <a class="btn btn-success" href="{{ route('staff.create') }}"> Create New staff</a>
         </div>
         <div class="col-lg-4">
             <form method="GET" action="{{ route('staff.index') }}" class="form-inline">
@@ -26,7 +26,7 @@
     @endif
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 my-4">
-        @foreach ($Staff as $item)
+        @foreach ($staff as $item)
             <div class="col">
                 <div class="card h-100">
                     <img src="{{ $item->photo }}" class="card-img-top" alt="...">
@@ -37,10 +37,10 @@
                             </a>
                         </h5>
                         <p class="card-text">
-                            {{ mb_substr($item->content, 0, 130) }} ...
+                            {{ mb_substr($item->birthdate, 0, 130) }} ...
                         </p>
-                        <p class="card-text fs-3">฿{{ number_format($item->price) }} บาท</p>
-                        <p class="card-text">คงเหลือ : {{ $item->stock }}</p>
+                        <p class="card-text fs-3">฿{{ number_format($item->salary) }} บาท</p>
+                        <p class="card-text">คงเหลือ : {{ $item->salary }}</p>
 
                     </div>
                 </div>
